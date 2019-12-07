@@ -1,1 +1,1 @@
-# Priests-and-Devils-AI
+# Priests-and-Devils-v2

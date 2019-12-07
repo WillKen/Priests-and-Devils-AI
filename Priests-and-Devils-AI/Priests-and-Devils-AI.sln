@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{EAE8B82D-B5DD-C747-FB1E-977915648EC4}") = "Priests-and-Devils-AI", "Assembly-CSharp.csproj", "{E65227C0-5FA9-7074-B342-1121FDD01DFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E65227C0-5FA9-7074-B342-1121FDD01DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65227C0-5FA9-7074-B342-1121FDD01DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65227C0-5FA9-7074-B342-1121FDD01DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65227C0-5FA9-7074-B342-1121FDD01DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
