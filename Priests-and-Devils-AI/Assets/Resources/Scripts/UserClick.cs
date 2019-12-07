@@ -1,43 +1,25 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Mydirector;
+using Mycontroller;
+public class UserClick : MonoBehaviour {
+	
+	private UserAction action;
+	Mycontroller.CharacterController character_ctrl;
+	public void setController(Mycontroller.CharacterController character){
+		character_ctrl = character;
+	}
+		
+	void Start () {
+		action = Director.getInstace().current as UserAction;
+	}
 
-
-namespace myGame
-{
-    public class UserClick : MonoBehaviour
-    {
-        IUserAction action;
-        CharactersController charactersController;
-        ISceneController handel;
-
-        void Start()
-        {
-            action = Director.GetInstance().currentSceneController as IUserAction;
-            handel = Director.GetInstance().currentSceneController as ISceneController;
-        }
-        
-        public void setController(CharactersController c)
-        {
-            charactersController = c;
-        }
-
-        void OnMouseDown()
-        {
-            Debug.Log(handel.getState());
-            if ( handel.getState() == 0)
-            {
-                Debug.Log(gameObject.name);
-                if (gameObject.name == "boat")
-                {
-                    action.moveBoat();
-                }
-                else
-                {
-                    action.clickACharacter(charactersController);
-                }
-            }
-        }
-
-
-    }
+	void OnMouseDown(){
+		if (gameObject.name == "boat") {
+			action.moveBoat ();
+		} else {
+			action.moveCharacter (character_ctrl);
+		}
+	}
 }
-
